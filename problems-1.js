@@ -6,6 +6,7 @@
     "no" - otherwise
 
     Added a new line 1
+    Added a new line 2
 */
 
 function isSortedAndHow(nums) {
