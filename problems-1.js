@@ -4,6 +4,8 @@
     "yes, ascending" - if the numbers in the array are sorted in an ascending order
     "yes, descending" - if the numbers in the array are sorted in a descending order
     "no" - otherwise
+
+    Added a new line 1
 */
 
 function isSortedAndHow(nums) {
