@@ -10,7 +10,27 @@
 */
 
 function encrypt(text, n) {
-    
+    let arr=[]
+    if(n>0 && null!=text){
+        arr=text.split('');
+        for(let counter=0;counter<n;counter++){        
+            let arrLeft=[]
+            let arrRight=[]
+            for(let i=1;i<arr.length;i=i+2){
+                arrLeft.push(arr[i]);
+            }
+            for(let j=0;j<arr.length;j=j+2){
+                arrRight.push(arr[j]);
+            }
+            arr=arrLeft.concat(arrRight);
+        }
+        console.log(arr.join(''))
+    }else{
+        console.log(text);
+
+        return text;
+    }
+    return arr.join('');
 }
 
 /*

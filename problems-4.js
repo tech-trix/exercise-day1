@@ -10,7 +10,21 @@
 */
 
 function findEvenIndex(arr) {
-    
+    let pos=-1;
+    for(let i=1;i<arr.length;i++){
+       let sumToLeft=0;
+       let sumToRight=0;
+       for(let j=0;j<i;j++){
+        sumToLeft=sumToLeft+arr[j];
+       } 
+       for(let k=i+1;k<arr.length;k++){
+        sumToRight=sumToRight+arr[k];
+       }
+       if(sumToLeft==sumToRight) {
+        return i;
+       }        
+    }
+    return pos;
 }
 
 // Do not modify this code

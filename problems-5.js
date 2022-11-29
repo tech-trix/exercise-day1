@@ -8,7 +8,11 @@
 */
 
 function findUnique(input) {
-    
+    for (let element of input) {
+        if(input.indexOf(element)==input.lastIndexOf(element)){
+            return element;
+        }        
+    }    
 }
 
 // Do not modify this code

@@ -5,7 +5,8 @@
 */
 
 function sumTwoSmallestNumbers(nums) {
-    
+    nums.sort(function(a, b){return a - b});
+    return nums[0]+nums[1];
 }
 
 // Do not modify this code
